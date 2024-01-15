@@ -120,7 +120,8 @@ int main(void)
 		}
 		printf("\n");
 	}
+	// int k =0 일 때 원하는 결과 나오지 않음
 
-
+	
 	return 0;
 }
