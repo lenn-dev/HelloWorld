@@ -2,7 +2,7 @@
 
  //디버깅 없이 실행 ctrl+fn+f5
 // comment/uncomment ctrl+k,c / ctrl+k,u
-int main(void)
+int main_printfscanf(void)
 {
 	//정수형 변수 
 	/*int age = 12;
@@ -53,9 +53,42 @@ int main(void)
 
 	//문자열(한 글자 이상)
 	//문자열 받을때는 & 안붙이고, 사이즈 설정해줘야 함 sizeof
-	char str[256];
+	/*char str[256];
 	scanf_s("%s", str, sizeof(str));
-	printf("%s\n", str);
+	printf("%s\n", str);*/
+
+
+	//경찰서 조서 작성하기
+	//프로젝트: 경찰관이 범죄자의 정보 입수
+	// 이름? 나이? 몸무게? 키? 범죄명
+	char name[256];
+	printf("이름이 뭐예요?");
+	scanf_s("%s", name, sizeof(name));
+	
+	int age;
+	printf("몇 살 이에요?");
+	scanf_s("%d", &age);
+	
+	float weight;
+	printf("몸무게는 몇 kg이에요 ? ");
+	scanf_s("%f", &weight);
+	
+	double height;
+	printf("키는 몇 cm 에요?");
+	scanf_s("%lf", &height);
+	
+	char crime[256];
+	printf("무슨 범죄를 저질렀나요?");
+	scanf_s("%s", crime, sizeof(crime));
+
+	//조서 내용 출력
+	printf("\n\n---범죄자 정보---\n\n");
+	printf("이름   :%s\n", name);
+	printf("나이   :%d\n", age);
+	printf("몸무게   :%.2f\n", weight);
+	printf("키   :%.2lf\n", height);
+	printf("범죄항목   :%s\n", crime);
+
 
 
 
