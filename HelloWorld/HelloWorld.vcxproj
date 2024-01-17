@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="condition.c" />
     <ClCompile Include="HelloWorld.c" />
     <ClCompile Include="loop.c" />
   </ItemGroup>
