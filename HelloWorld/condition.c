@@ -8,7 +8,7 @@
 #include <time.h> //srand 함수 사용하기 위해 필요
 
 //main 함수는 프로그램이 시작되는 함수
-int main(void) {
+int main_codition(void) {
 
 	// 버스를 탄다고 가정 : 학생/일반인으로 구분 (일반인:20세)
 	/*int age=25;
