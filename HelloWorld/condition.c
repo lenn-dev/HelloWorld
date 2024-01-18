@@ -115,7 +115,7 @@ int main(void) {
 	// 이런 문법의 특징을 이용하여 
 	// 같은 문장을 반복해야하는 범위의 맨 마지막 case 문에만 
 	// 실행문을 쓰고 break만 걸어주면 된다.
-	int age;
+	/*int age;
 	printf("몇살이에요?");
 	scanf_s("%d",&age);
 
@@ -137,7 +137,34 @@ int main(void) {
 		
 	}
 
-	
+	*/
 
+	//Up and Down 숫자 맞추기 게임
+	srand(time(NULL));
+	int num = rand() % 100 + 1; //1~100 사이의 숫자
+	printf("숫자 : %d\n", num);
+	int answer = 0; //정답
+	int chance = 5; //기회
+	while (chance > 0) 
+	{
+		printf("남은 기회는 %d 번\n", chance--);
+		printf("숫자를 맞춰보세요 (1~100) : ");
+		scanf_s("%d", &answer);
+
+		if (answer > num) {
+			printf("DOWN \n\n");
+		}
+		else if (answer < num) {
+			printf("UP \n\n");
+		}
+		else if(answer == num){
+			printf("정답입니다! \n\n");
+			break;
+		}
+		else {
+			printf("알수 없는 오류가 발생했습니다 \n\n");
+		}
+
+	}	
 	return 0;
 }
