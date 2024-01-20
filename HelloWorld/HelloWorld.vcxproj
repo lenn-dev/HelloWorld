@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="condition.c" />
     <ClCompile Include="function.c" />
+    <ClCompile Include="func_project.c" />
     <ClCompile Include="HelloWorld.c" />
     <ClCompile Include="loop.c" />
   </ItemGroup>
