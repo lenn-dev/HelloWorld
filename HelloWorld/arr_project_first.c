@@ -2,18 +2,18 @@
 #include <time.h>
 #include <stdlib.h> //srand 위해 포함
 
-int main(void) {
+int main_arr_project(void) {
 	//srand(time(NULL)); //에러나서 unsigned int 포함
 	srand((unsigned int)time(NULL));
 	printf("\n\n===아빠는 대머리 게임===\n\n");
 	int answer; // 사용자 입력값
 	int treatment = rand() % 4; // 발모제 선택(0~3)
 
-	// 보여주는 병 갯수의 랜덤값을 다른게 하여 정답률 향상
+	// 보여주는 병 갯수의 랜덤값을 다르게 하여 정답률 향상
 	int cntShowBottle = 0; // 이번 게임에 보여줄 병 갯수
 	int prevShowBottle = 0; // 앞 게임에 보여준 병 갯수
 
-	//3번의 기회(3번의 발모제 투여 시도)
+	//3번의 게임 기회 (3번의 발모제 투여 시도)
 	for (int i = 1; i <= 3; i++) {
 		int bottle[4] = { 0,0,0,0 }; //4개의 병
 		do {
@@ -63,7 +63,7 @@ int main(void) {
 				printf(" >>실패 : 머리가 나지 않았어요 ! \n");
 			}
 			printf(" \n 계속 하려면 아무키나 누르세요...\n");
-			getchar(); //오류나서 system("pause")로 대체
+			//getchar(); //오류나서 system("pause")로 대체
 			//system("pause");
 		}
 
@@ -81,6 +81,7 @@ int main(void) {
 
 
 
-		return 0;
+		//return 0;
 	}
+	return 0;
 }

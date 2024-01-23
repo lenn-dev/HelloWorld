@@ -33,7 +33,10 @@
     <ClCompile Include="array.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="arr_project.c">
+    <ClCompile Include="arr_project_first.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="arr_project_secondtry.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
