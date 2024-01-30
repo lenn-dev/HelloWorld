@@ -3,7 +3,7 @@
 #include <stdlib.h> //srand 위해 포함
 
 
-int main(void) {
+int main_array_secondtry(void) {
 	//게임이름 
 	printf("\n\n ===아빠는 대머리 게임===\n\n");
 

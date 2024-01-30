@@ -135,6 +135,7 @@
     <ClCompile Include="func_project.c" />
     <ClCompile Include="HelloWorld.c" />
     <ClCompile Include="loop.c" />
+    <ClCompile Include="pointer.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
