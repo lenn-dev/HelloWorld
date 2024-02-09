@@ -3,7 +3,7 @@ void swap(int a, int b);
 void swap_addr(int *a, int *b);
 void changeArr(int* ptr);
 
-int main(void) {
+int main_pointer(void) {
 
 	//포인터
 	//철수 : 101호 => 메모리 공간의 주소
