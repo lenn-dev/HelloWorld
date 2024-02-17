@@ -135,6 +135,8 @@
     <ClCompile Include="func_project.c" />
     <ClCompile Include="HelloWorld.c" />
     <ClCompile Include="loop.c" />
+    <ClCompile Include="multi_array.c" />
+    <ClCompile Include="multi_arr_project.c" />
     <ClCompile Include="pointer.c" />
     <ClCompile Include="pointer_project.c" />
   </ItemGroup>

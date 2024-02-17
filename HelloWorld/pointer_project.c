@@ -16,7 +16,7 @@ int level; // 물의 레벨 전역변수
 int arrayFish[6]; // 6마리 물고기 배열
 int * cursor; // 어떤 물고기에게 물을 줄지 포인터
 
-int main(void) 
+int main_pointer_project(void) 
 {
 	// 어항물과 레벨업을 위해 시간 정보를 활용함, 필요한 변수 선언
 	long startTime = 0; //게임 시작 시간
