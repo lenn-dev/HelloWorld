@@ -325,3 +325,35 @@
 //문자열 단위입력 gets() puts()
 //gets() 함수 사용 예
 
+// 공백이후의 문자열을 다 받기 위해서는 gets()가 scanf보다 효과적임
+//#include <stdio.h>
+//#pragma warning(disable:4996)
+//
+//void main()
+//{
+//	char s[50];
+//	printf("문자열 입력?");
+//	gets(s);
+//	printf("gets()로 문자열 입력= %s\n", s);
+//	printf("\n문자열 입력?");
+//	scanf_s("%s", s);
+//	printf("scanf()로 문자열 입력 = %s\n", s);
+//	return 0;
+//}
+
+//puts() 함수 사용 예
+
+//puts()는 자동줄바꿈이 되어 출력됨
+//printf()는 줄바꿈하려면 \n 넣어줘야함
+//#include <stdio.h>
+//void main()
+//{
+//	char a[] = "computer";
+//	char b[] = "science";
+//	puts(a);
+//	puts(b);
+//	printf("%s", a);
+//	printf("%s", b);
+//
+//	return 0;
+//}
