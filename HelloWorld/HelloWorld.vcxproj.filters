@@ -51,5 +51,11 @@
     <ClCompile Include="multi_arr_project.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="knou_C_workbook.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="factorial.h">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -130,6 +130,8 @@
     <ClCompile Include="array.c" />
     <ClCompile Include="arr_project_first.c" />
     <ClCompile Include="arr_project_secondtry.c" />
+    <ClCompile Include="factorial.h" />
+    <ClCompile Include="knou_C_workbook.c" />
     <ClCompile Include="condition.c" />
     <ClCompile Include="function.c" />
     <ClCompile Include="func_project.c" />
