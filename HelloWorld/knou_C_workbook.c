@@ -582,12 +582,12 @@
 
 
 //강제형변환
-#include <stdio.h>
-void main()
-{
-	int a = 3, b = 4;
-	double c;
-	c = (double)a / b; // int형인 a를 double형으로 강제 형전환
-	printf("나눗셈 결과: %f\n", c); //0.750000
-	return 0;
-}
+//#include <stdio.h>
+//void main()
+//{
+//	int a = 3, b = 4;
+//	double c;
+//	c = (double)a / b; // int형인 a를 double형으로 강제 형전환
+//	printf("나눗셈 결과: %f\n", c); //0.750000
+//	return 0;
+//}
