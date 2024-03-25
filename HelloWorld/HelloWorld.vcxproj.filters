@@ -57,5 +57,8 @@
     <ClCompile Include="factorial.h">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="assignment.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

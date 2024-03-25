@@ -582,7 +582,7 @@
 
 
 //강제형변환
-//#include <stdio.h>
+// #include <stdio.h>
 //void main()
 //{
 //	int a = 3, b = 4;
