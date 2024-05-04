@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="3_structure_array.c" />
     <ClCompile Include="array.c" />
     <ClCompile Include="arr_project_first.c" />
     <ClCompile Include="arr_project_secondtry.c" />
     <ClCompile Include="assignment.c" />
+    <ClCompile Include="2_avg_dv_converter.c" />
     <ClCompile Include="factorial.h" />
     <ClCompile Include="knou_C_workbook.c" />
     <ClCompile Include="condition.c" />
@@ -142,6 +144,8 @@
     <ClCompile Include="multi_arr_project.c" />
     <ClCompile Include="pointer.c" />
     <ClCompile Include="pointer_project.c" />
+    <ClCompile Include="1_upperlower_converter.c" />
+    <ClCompile Include="upperlower_2.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
