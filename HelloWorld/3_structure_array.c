@@ -15,7 +15,7 @@ struct entry
 struct entry list[4];// 4개의 개인신상정보를 저장하기 위한 entry 구조체 배열 list 선언
 int i; // 정수형 i 변수 선언
 
-void main() // main().함수의 시작
+void main_struct() // main().함수의 시작
 {
 	
 	for (i = 0; i < 4; i++) // 구조체 배열 list 길이 만큼 for루프 돌기
