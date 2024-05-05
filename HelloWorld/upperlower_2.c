@@ -72,3 +72,14 @@ int main_s()
 	printf("\n입력된 문자열(소문자는 대문자로 변환):%s \n", string);
 	return 0;
 }
+
+
+
+void convertToUpperCase(char* sPtr)
+{
+	while (*sPtr != '\0')
+	{
+		if (islower(*sPtr))
+			*sPtr = toupper(*sPtr);
+	}
+}
