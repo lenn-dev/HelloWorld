@@ -25,7 +25,7 @@ void swap(int* (&a),int* (&b)) { // 레퍼런스변수 a 중 인트형 포인터를 가진 변수
 	b = tmp;
 }
 
-int main() {
+int main_overload() {
 
 	int a = 20, b = 30;
 	double da = 2.222, db = 3.333; 

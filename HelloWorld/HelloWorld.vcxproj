@@ -135,6 +135,7 @@
     <ClCompile Include="2_avg_dv_converter.c" />
     <ClCompile Include="ex2_reference.cpp" />
     <ClCompile Include="ex3_overloading.cpp" />
+    <ClCompile Include="ex4.cpp" />
     <ClCompile Include="factorial.h" />
     <ClCompile Include="knou_C_workbook.c" />
     <ClCompile Include="condition.c" />
