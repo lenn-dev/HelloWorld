@@ -72,7 +72,7 @@
     <ClCompile Include="upperlower_2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex1-basic.cpp">
+    <ClCompile Include="ex1_basic.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ex2_reference.cpp">
@@ -81,7 +81,10 @@
     <ClCompile Include="ex3_overloading.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ex4.cpp">
+    <ClCompile Include="ex4_overloading_getItem.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ex5_tinyprogram.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

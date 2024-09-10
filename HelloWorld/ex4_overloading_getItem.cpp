@@ -14,18 +14,21 @@ using namespace std;
 
 int inventory[64] = { 0 };
 int score = 0;
-void getItem(int itemId) {
-	inventory[itemId]++;
-}
-void getItem(int itemId, int cnt) {
-	inventory[itemId]=+cnt;
-}
-void getItem(int itemId, int cnt, int sc) {
+//void getItem(int itemId) {
+//	inventory[itemId]++;
+//}
+//void getItem(int itemId, int cnt) {
+//	inventory[itemId]=+cnt;
+//}
+// [ 디폴트 매개변수 ]를 설정해주면 인자가 들어오지 않을때를 설정해줌으로써
+// 앞쪽 함수가 다 필요 없음.
+// 디폴트값을 줄 때 오른쪽 부터 주어야 하는걸로 약속(이유 이해 안됨).
+void getItem(int itemId, int cnt = 1 , int sc = 0 ) {
 	inventory[itemId] = +cnt;
 	score = +sc;
 }
 
-int main() {
+int main_getItem() {
 
 	getItem(2);
 	getItem(5, 22);
@@ -39,9 +42,6 @@ int main() {
 		cout << inventory[i] << ' ';
 	}
 	cout << endl;
-
-
-
 
 	return 0;
 }

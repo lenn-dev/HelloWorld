@@ -135,7 +135,8 @@
     <ClCompile Include="2_avg_dv_converter.c" />
     <ClCompile Include="ex2_reference.cpp" />
     <ClCompile Include="ex3_overloading.cpp" />
-    <ClCompile Include="ex4.cpp" />
+    <ClCompile Include="ex4_overloading_getItem.cpp" />
+    <ClCompile Include="ex5_tinyprogram.cpp" />
     <ClCompile Include="factorial.h" />
     <ClCompile Include="knou_C_workbook.c" />
     <ClCompile Include="condition.c" />
@@ -148,7 +149,7 @@
     <ClCompile Include="pointer.c" />
     <ClCompile Include="pointer_project.c" />
     <ClCompile Include="1_upperlower_converter.c" />
-    <ClCompile Include="ex1-basic.cpp" />
+    <ClCompile Include="ex1_basic.cpp" />
     <ClCompile Include="upperlower_2.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
