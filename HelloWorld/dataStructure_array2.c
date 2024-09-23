@@ -34,7 +34,7 @@ void arrayPrint() { //입력된 배열 값 출력하는 함수
 	}
 }
 
-void main() {
+void main_2dim_array() {
 	printf("이 프로그램에서 2차원 배열의 크기는 [%d][%d] 입니다. \n", col, row);
 
 	arrayCreate2();
