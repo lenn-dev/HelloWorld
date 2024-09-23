@@ -65,7 +65,7 @@ void push() { // 스택 push 연산, 맨 위에 값을 할당할 예정
 	}
 }
 
-void main() { //메인함수
+void main_stack() { //메인함수
 	createStack(STACK_SIZE);
 	push();
 	PrintStack();
