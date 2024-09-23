@@ -133,6 +133,7 @@
     <ClCompile Include="arr_project_secondtry.c" />
     <ClCompile Include="assignment.c" />
     <ClCompile Include="2_avg_dv_converter.c" />
+    <ClCompile Include="dataStructrue_stack1.c" />
     <ClCompile Include="dataStructure_array1.c" />
     <ClCompile Include="dataStructure_array2.c" />
     <ClCompile Include="factorial.h" />
