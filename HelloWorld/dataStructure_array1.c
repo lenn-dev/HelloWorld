@@ -50,7 +50,7 @@ void arraySearch() { // 배열에 저장된 값 중에 사용자가 찾고자 하는 값이 있는지 �
 	if (result == 0) printf("찾고자 하는 값이 없습니다. \n");
 }
 
-void main() {
+void main_ds_array1() {
 	// 배열 사이즈를 미리 설정함
 	printf("이 프로그램에서 배열의 크기는 %d입니다 \n", array_size);
 

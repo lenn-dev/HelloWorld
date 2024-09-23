@@ -72,7 +72,10 @@
     <ClCompile Include="upperlower_2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="dataStructure_2_array.c">
+    <ClCompile Include="dataStructure_array1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dataStructure_array2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
