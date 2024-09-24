@@ -140,6 +140,7 @@
     <ClCompile Include="dataStructrue_stack1.c" />
     <ClCompile Include="dataStructure_array1.c" />
     <ClCompile Include="dataStructure_array2.c" />
+    <ClCompile Include="dataStructure_linkedlist1.c" />
     <ClCompile Include="dataStructure_queue1.c" />
     <ClCompile Include="dataStructure_stack2.c" />
     <ClCompile Include="factorial.h" />
