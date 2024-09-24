@@ -31,13 +31,14 @@ linkedList_h* createLinkedList_h(void) { // 연결리스트 생성
 	return H;
 }
 
+// NewNode와 헤드노드 연결
 void addNode(linkedList_h* H, int x) { // 연결 리스트의 노드 삽입
 	// 리스트 마지막 노드에 삽입 연산하며, x값은 100,200,300로 가정함
 	listNode* NewNode; // 노드생성
 	listNode* LastNode; // 노드생성
 	NewNode = (listNode*)malloc(sizeof(listNode)); // 노드 동적할당
 
-	NewNode->data = x; // 데이터값
+	NewNode-> data = x; // 데이터값
 	NewNode->link = NULL; // 주소값
 
 	if (H->head == NULL) { // 현재 리스트가 공백인 경우
@@ -45,6 +46,9 @@ void addNode(linkedList_h* H, int x) { // 연결 리스트의 노드 삽입
 		return;
 	}
 
+	// 맨 마지막에 넣겠다는 것
+	// LastNode 가 link가 널이면 리스트 마지막이라는 것이고,
+	// 맨 뒤에 새로생성한 노드를 연결시킴
 	LastNode = H->head;
 	while (LastNode->link != NULL) LastNode = LastNode->link;
 	LastNode->link = NewNode;
@@ -57,19 +61,20 @@ void deleteNode(linkedList_h* H) { // 리스트의 마지막 노드 삭제 연산
 	if (H->head == NULL)return; // 공백 리스트인 경우, 삭제연산 중단
 	if (H->head->link == NULL) {// 리스트에 노드가 한개인 경우
 		free(H->head);     // 첫 번째 노드의 메모리를 해제
-		H->head = NULL;
+		H->head = NULL; // 헤드 주소값을 NULL로 바꿈
 		return;
 	}
-	else {
-		prevNode = H->head;
-		delNode = H->head->link;
-		while (delNode->link != NULL) {
+	else { // 리스트 노드가 여러개인 경우 : 마지막까지 찾아가야 함
+		prevNode = H -> head;
+		delNode = H -> head -> link;
+
+		while (delNode -> link != NULL) {
 			prevNode = delNode;
-			delNode = delNode->link;
+			delNode = delNode -> link;
 		}
 
 		free(delNode);
-		prevNode->link = NULL;
+		prevNode -> link = NULL;
 	}
 }
 
@@ -92,10 +97,10 @@ void deleteitNode(linkedList_h* H, int deldata) {
 }
 
 void additNode(linkedList_h* H, int itdata, int adddata) {
-	//연결 리스트에서 특정 노드 뒤에 노드를 삽입하는 연산
+	//연결 리스트에서 특정 노드 뒤에(리스트중간에) 노드를 삽입하는 연산
 	//itdata: prevNode의 데이터, adddata : 삽입할 노드의 데이터
 	listNode* prevNode;
-	prevNode = H->head;
+	prevNode = H-> head;
 
 	while (prevNode->data != itdata) {
 		prevNode = prevNode -> link;
@@ -103,11 +108,12 @@ void additNode(linkedList_h* H, int itdata, int adddata) {
 
 	listNode* NewNode;
 	NewNode = (listNode*)malloc(sizeof(listNode));
-	NewNode->data = adddata;
-	NewNode->link = NULL;
+	NewNode-> data = adddata;
+	NewNode-> link = NULL;
 
-	NewNode->link = prevNode->link;
-	prevNode->link = NewNode;
+	// NewNode를 사이에 껴넣음
+	NewNode-> link = prevNode->link;
+	prevNode-> link = NewNode;
 	return;
 }
 
@@ -126,11 +132,11 @@ void printList(linkedList_h* L) {
 	// 노드 순서대로 리스트를 출력하는 함수
 	listNode* p;
 	printf("List = (");
-	p = L->head;
+	p = L-> head;
 
 	while (p != NULL) {
 		printf("%d", p -> data);
-		p = p->link;
+		p = p-> link;
 		if (p != NULL)printf(" --> ");
 	}
 
