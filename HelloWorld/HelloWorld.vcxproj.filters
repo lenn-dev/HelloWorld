@@ -81,5 +81,14 @@
     <ClCompile Include="dataStructrue_stack1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="dataStructure_stack2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="연습.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dataStructure_queue1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

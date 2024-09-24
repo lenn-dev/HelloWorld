@@ -1,4 +1,8 @@
-//자료구조 array 
+//자료구조 2강 array 
+// 1차원 배열에서의 주소계산
+// A[0]의 시작주소를 a라 가정하면 A[1]저장주소는? [a+k]
+// A[2] 주소는 [a+2*k], A[3] 주소는 [a+3*k]
+// 
 // scnaf 를 scanf_s로 바꿔줘야 동작함
 // debug asserttion faild =입력받은 값을 저장할 변수에 & 붙여야 함
 //#progma warning(disable:4996)
@@ -12,13 +16,15 @@ void arrayCreate() {
 	int i;
 	//생성된 배열을 for loop돌면서 값을 할당해줌
 	for (i = 0; i < array_size; i++) {
+		//a[i] = 0; // 0으로 초기화
 		printf("배열의 초기값을 입력하세요. a[%d] : ", i);
 		scanf_s("%d", &a[i]);
 	}
+
 	printf("배열의 초기값이 설정되었습니다. \n\n");
 }
 
-void retrieve() { // 사용자가 입력한 배열 위치값(인덱스)에 저장된 값을 알려주는 함수
+void retrieve() { // 사용자가 입력한 위치값(배열 인덱스)에 저장된 값을 알려주는 함수
 	int s;
 
 	printf("값을 알고자 하는 배열 위치값을 입력하세요(0~4) : ");
@@ -30,6 +36,7 @@ void retrieve() { // 사용자가 입력한 배열 위치값(인덱스)에 저장된 값을 알려주는 
 	}
 	else {
 		printf("Error \n");
+		
 	}
 }
 
