@@ -60,7 +60,7 @@ void Add_q() {
 	}
 }
 
-void main() {
+void main_queue() {
 	createQueue(QUEUE_SIZE);
 	Add_q();
 	PrintQueue();
