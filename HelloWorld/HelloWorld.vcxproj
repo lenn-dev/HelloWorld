@@ -143,6 +143,7 @@
     <ClCompile Include="dataStructure_linkedlist1.c" />
     <ClCompile Include="dataStructure_queue1.c" />
     <ClCompile Include="dataStructure_stack2.c" />
+    <ClCompile Include="dataSturcture_circular_linked_list.c" />
     <ClCompile Include="factorial.h" />
     <ClCompile Include="knou_C_workbook.c" />
     <ClCompile Include="condition.c" />
