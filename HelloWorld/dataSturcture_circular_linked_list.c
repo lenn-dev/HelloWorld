@@ -122,7 +122,7 @@ void printList(linkedList_h* L) {
 	}
 }
 
-void main() {
+void main_circular_linkedList() {
 	linkedList_h* L;
 	L = createLinkedList_h();
 

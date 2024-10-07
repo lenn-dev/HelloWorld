@@ -99,7 +99,7 @@ element evalPostfix(char* exp) { //후위 연산 함수
 	return pop();
 }
 
-void main_stack() {
+void main_stack2() {
 	createStack(STACK_SIZE);
 	int result;
 	char exp[6];
